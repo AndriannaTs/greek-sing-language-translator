@@ -22,8 +22,8 @@ D2    :FOR INT
 
 
 
-// Εισαγωγή Βιβλιοθηκών για τη λειτουργία του προγράμματος
-//Η βιβλιοθήκη "I2Cdev.h πρέπει να εγκατασταθεί για να λειτουργεί ο MPU 6050
+//Importing Libraries for the proper operation of the program
+//The I2Cdev.h library must be installed for the MPU 6050 to be working.
 
 
 #include <SoftwareSerial.h>
@@ -202,7 +202,7 @@ void loop(void){
   ring = constrain(ring, sensorMin4, sensorMax4);
   pinky = constrain(pinky, sensorMin5, sensorMax5);
   
-  // Μέσω της συνάρτησης map , αλλάζουμε το εύρος των αναλογικών τιμών που θα πάρουμε από τα flex sensros και αφού οι τιμές μετατραπούν σε ψηφιακές, ορίζουμε το εύρος των τιμών από 0 εως 100.To float δίνει τη δυνατότητα να φαίνονται οι τιμές ως τύποι δεδομένων.
+  // Through the map function, we change the range of analog values that we will get from the flex sensros and after the values are converted to digital, we set the range of values from 0 to 100. The float allows the values to be seen as data types.
 
   float angle1= map(thumb, sensorMin1, sensorMax1, 0, 100);
   float angle2= map(index, sensorMin2, sensorMax2, 0, 100);
