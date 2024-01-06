@@ -33,7 +33,7 @@ D2    :FOR INT
 
 
 
-SoftwareSerial Bluetooth (11,10); // οι RX | TX  είσοδοι του Arduino Nano//
+SoftwareSerial Bluetooth (11,10); //  RX | TX  connected pins onArduino Nano//
 
 
 //variable initializtion for MPU-6050 //
@@ -45,7 +45,7 @@ int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ; // Data of MPU-6050
 int minVal=265; // Declaring the smallest value the accelerometer will have
 int maxVal=402; // Declaring the largest value the accelerometer will have
 
-double x;  //Doubling the variable of  x
+double x; //Doubling the variable of x
 double y; //Doubling the variable of y
 double z; //Doubling the variable of z
 
