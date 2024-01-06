@@ -40,14 +40,14 @@ SoftwareSerial Bluetooth (11,10); // οι RX | TX  είσοδοι του Arduino
 
 
 
-const int MPU_addr=0x69;   // I2C διεύθυνση που έχω στον MPU-6050
-int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ; // Δεδομένα του MPU-6050
-int minVal=265; // Δηλώνουμε την ελάχιστη τιμή που θα πάρει το αξελερόμετρο
-int maxVal=402; // Δηλώνουμε τη μέγιστη τιμή που θα πάρει το αξελερόμετρο
+const int MPU_addr=0x69;   // I2C address of MPU-6050
+int16_t AcX,AcY,AcZ,Tmp,GyX,GyY,GyZ; // Data of MPU-6050
+int minVal=265; // Declaring the smallest value the accelerometer will have
+int maxVal=402; // Declaring the largest value the accelerometer will have
 
-double x;  //Διπλασιασμός της μεταβλητής  x
-double y; //Διπλασιασμός της μεταβλητής y
-double z; //Διπλασιασμός της μεταβλητής z
+double x;  //Doubling the variable of  x
+double y; //Doubling the variable of y
+double z; //Doubling the variable of z
 
 //variable initializtion for sensors
 
